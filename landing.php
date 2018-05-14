@@ -30,9 +30,9 @@ $services = $query->query(array(
                     <ul class="uk-slideshow-items">
                         <?php foreach($slideshow as $item) : ?>
                             <li class="slideshow-item">
-                                <div class="uk-position-cover uk-animation-kenburns uk-transform-origin-center-left">
+                                <!-- <div class="uk-position-cover uk-animation-kenburns uk-transform-origin-center-left"> -->
                                     <img class="slideshow-item__image" src="<?php echo $item['image']['url'] ?>" alt="<?php echo $item['image']['title'] ?>" uk-cover>
-                                </div>
+                                <!-- </div> -->
                                 <div class="slideshow-item__info">
                                     <?php if ($item['link']) : ?>
                                         <a href="<?php echo $item['link'] ?>"><?php echo $item['title'] ?></a>
