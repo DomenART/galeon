@@ -17,6 +17,7 @@
             <?php the_field('schedule', 'option') ?>
           </p>
         </div>
+        <div></div>
       </div>
       <div class="uk-width-1-2@s uk-width-1-3@m">
         <div class="footer__likes">
@@ -34,7 +35,7 @@
 </div>
 <div class="footer__info">
   <div class="uk-container">
-    <div class="uk-grid uk-flex-middle">
+    <div class="uk-grid uk-flex-middle uk-grid-small" uk-grid>
       <div class="uk-width-1-3@m">
         <div class="footer__copyright">
         <?php the_field('copyright', 'option') ?>
@@ -57,21 +58,16 @@
 
 <button class="scrollup js-scrollup" uk-scroll>
   <span uk-icon="chevron-up"></span>
-  <span>Наверх</span>
+  <span class="scrollup__label">Наверх</span>
 </button>
 
 <div id="feedback" uk-modal>
     <div class="uk-modal-dialog uk-modal-body modal-dialog--small">
-        <a class="uk-modal-close uk-close"></a>
+        <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
           <div class="modal-title">Есть вопросы?<br>Напишите нам.</div>
         </div>
-        {$_modx->runSnippet('!ajaxForm@Form', [
-          'form' => 'tpl.AjaxForm.feedback',
-          'validate' => 'email:email:required',
-          'emailSubject' => 'Обратная связь',
-          'formName' => 'Обратная связь'
-        ])}
+        <?php echo do_shortcode('[contact-form-7 id="96" title="Контактная форма"]'); ?>
     </div>
 </div>
 

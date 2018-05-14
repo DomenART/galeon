@@ -8,10 +8,14 @@
 
         <div class="header__btns uk-flex">
             <a href="#feedback" uk-toggle><span uk-icon="icon: mail; ratio: .8"></span></a>
+            <button class="uk-hidden@s" uk-toggle="target: .header__menu; cls: uk-visible@s">
+                <span uk-icon="icon: menu; ratio: .8"></span>
+            </button>
             <!-- <a href="{43 | url}"><span uk-icon="icon: search; ratio: .8"></span></a> -->
         </div>
 
         <?php wp_nav_menu( array(
+	        'container_class' => 'header__menu uk-visible@s',
             'theme_location'  => 'header_menu',
             'menu_class'      => 'header-menu',
         ) ); ?>

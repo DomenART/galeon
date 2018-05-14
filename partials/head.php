@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title() ?></title>
+<title><?php the_title() ?></title>
 <!-- <meta name="description" content="{$_modx->resource['seo.description']}">
 <meta name="keywords" content="{$_modx->resource['seo.keywords']}"> -->
 <!-- <base href="{$_modx->config['site_url']}"> -->

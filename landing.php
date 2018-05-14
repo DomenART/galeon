@@ -22,7 +22,7 @@ $services = $query->query(array(
     <body>
         <div class="wrapper">
             <div class="home-intro js-home-intro">
-                <div class="header-absolute" uk-sticky="offset: -300; animation: uk-animation-slide-top; media: 960; cls-active: header-small">
+                <div class="header-absolute" uk-sticky="offset: -300; animation: uk-animation-slide-top; cls-active: header-small">
                     <?php get_template_part( 'partials/header' ) ?>
                 </div>
 
