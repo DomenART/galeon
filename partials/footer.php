@@ -48,7 +48,7 @@
         <a href="#" class="footer__sitemap">Карта сайта</a>
       </div>
       <div class="uk-width-1-3@m">
-        <a href="http://domenart-studio.ru/" class="footer__creator">
+        <a href="http://domenart-studio.ru/" class="footer__creator" target="_blank">
           Разработка сайта
         </a>
       </div>
