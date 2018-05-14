@@ -45,7 +45,7 @@
         <div class="footer__counters">
           <?php the_field('counters', 'option') ?>
         </div>
-        <a href="#" class="footer__sitemap">Карта сайта</a>
+        <a href="/sitemap" class="footer__sitemap">Карта сайта</a>
       </div>
       <div class="uk-width-1-3@m">
         <a href="http://domenart-studio.ru/" class="footer__creator" target="_blank">
